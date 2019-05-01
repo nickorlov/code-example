@@ -1,0 +1,8 @@
+google_api:
+    resource: "@GoogleApiBundle/Controller/"
+    type:     annotation
+    prefix:   /google
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

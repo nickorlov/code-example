@@ -1,0 +1,9 @@
+services:
+    google_api.data_provider.client_data_provider:
+        arguments:
+            - '@kernel'
+        class: GoogleApiBundle\DataProvider\ClientDataProvider
+
+    google_api.processor.google_photo_file_processor:
+        class: GoogleApiBundle\Processor\GooglePhotoFileProcessor
+        arguments: ['@google_api.data_provider.client_data_provider']
